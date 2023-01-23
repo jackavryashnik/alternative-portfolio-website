@@ -122,6 +122,27 @@ h2 {
     animation: ava-bg 3s infinite alternate;
 }
 
+.skill {
+    display: inline;
+    
+}
+
+.skills_title {
+    display: flex;
+    justify-content: center;
+}
+
+.skills_list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skill:hover {
+    color: rgba(0, 0, 0, 0.5);
+
+} 
+
 @media screen and (max-width: 978px) {
     .hero {
         padding-top: 30px;
