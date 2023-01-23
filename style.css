@@ -155,12 +155,25 @@ a:active {
     animation: ava-bg 3s infinite alternate;
 }
 
-.skill {
-    display: inline;
-    
+.sub_container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
 }
 
-.skills_title {
+.skill {
+    display: inline-flex;
+    background-repeat: no-repeat;
+    width: 129px;
+    height: 129px;
+    padding: 50px 40px;
+    border-radius: 15px;
+    background-color: #1f1e1b;
+    background-position: center;
+    gap: 10px;
+}
+
+.title {
     display: flex;
     justify-content: center;
 }
@@ -171,10 +184,45 @@ a:active {
     align-items: center;
 }
 
-.skill:hover {
-    color: rgba(0, 0, 0, 0.5);
+#html {
+    background-image:url("./image/icons/icon_html.png");
+}
 
-} 
+#html:hover {
+    background-image:url("./image/icons/icon_html--hover.png");
+}
+
+#css {
+    background-image:url("./image/icons/icon_css.png");
+}
+
+#css:hover {
+    background-image:url("./image/icons/icon_css--hover.png");
+}
+
+#js {
+    background-image:url("./image/icons/icon_js.png");
+}
+
+#js:hover {
+    background-image:url("./image/icons/icon_js--hover.png");
+}
+
+#git {
+    background-image:url("./image/icons/icon_git.png");
+}
+
+#git:hover {
+    background-image:url("./image/icons/icon_git--hover.png");
+}
+
+#scss {
+    background-image:url("./image/icons/icon_scss.png");
+}
+
+#scss:hover {
+    background-image:url("./image/icons/icon_scss--hover.png");
+}
 
 @media screen and (max-width: 978px) {
     .hero {
