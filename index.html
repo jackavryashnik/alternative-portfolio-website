@@ -27,15 +27,15 @@
         <a class="header_logo logo" href="#">Yevhen Vryashnik Web site</a>
         <nav>
             <ul>
-                <li><a rel="stylesheet" href="#">About Me</a></li>
-                <li><a href="#">Skills</a></li>
+                <li><a href="#about_me">About Me</a></li>
+                <li><a href="#my_skills">Skills</a></li>
                 <li><a href="#">Prodjects</a></li>
                 <li><a href="#">Contacts</a></li>
             </ul>
         </nav>
     </header>
     
-    <div class="hero">
+    <div class="hero" id="about_me">
         <div class="container hero_container">
             <div class="hero_about">
                 <h1 class="hero_title">Frontend developer</h1>
@@ -55,17 +55,20 @@
         </div>
     </div>
     
+    <div class="container sub_container">
+        <h2 class="hero_title title" id="my_skills">My Skills</h2>
+        <div class="skills">
+            <div class="skills_list">
+                <div class="skill" id="html"></div>
+                <div class="skill" id="css"></div>
+                <div class="skill" id="js"></div>
+                <div class="skill" id="git"></div>
+                <div class="skill" id="scss"></div>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
-        <h2 class="hero_title skills_title">My Skills</h2>
-        <div class="skills">
-            <ul class="skills_list">
-                <li class="skill"><img>HTML5</img></li>
-                <li class="skill"><img>CSS3</img></li>
-                <li class="skill"><img>JS</img></li>
-                <li class="skill"><img>SCSS</img></li>
-                <li class="skill"><img>React</img></li>
-            </ul>
-        </div>
+        <h2 class="hero_title title" id="projects">My Works</h2>
     </div>
 </html>
