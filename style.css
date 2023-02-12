@@ -1,3 +1,12 @@
+:root {
+    --main-bg-color: #1b1a17;
+    --bg-color: #1f1e1b;
+    --bg-color-alt: #b0b0b0;
+    --text-color: #f0e3ca;
+    --second-color: #ff8303;
+    --second-color-alt: #a35709;
+}
+
 ::before,
 ::after{
     box-sizing: border-box;
@@ -6,8 +15,9 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    background: var(--main-bg-color);
 }
-
 
 img {
     width: 100%;
@@ -16,6 +26,10 @@ img {
 
 h1,h2,h3 {
     margin: 0;
+}
+
+h1 {
+    color: var(--second-color);
 }
 
 h2 {
@@ -32,7 +46,7 @@ h2 {
 
     font-size: 24px;
     font-weight: 300;
-    color: gray;
+    color: var(--bg-color);
 }
 
 nav  li{
@@ -40,32 +54,32 @@ nav  li{
 }
 
 a {
-    color:#b0b0b0;
+    color:var(--bg-color-alt);
     outline: none;
     text-decoration: none;
     padding: 2px 1px 0;
 }
 
 a:link {
-    color: #0b0b0b
+    color: var(--text-color)
 }
 
 a:visited {
-    color: #292929
+    color: var(--second-color)
 }
 
 a:focus {
     border-bottom: 1px solid;
-    background: #b0b0b0;
+    background: var(--bg-color-alt);
 }
 
 a:hover {
-    color: #b0b0b0;
+    color: var(--second-color)  ;
 }
 
 a:active {
-    background: #0b0b0b;
-    color: #b0b0b0;
+    background: var(--bg-color);
+    color: var(--bg-color-alt);
 }
 
 .header_logo {
@@ -119,24 +133,20 @@ a:active {
 
 .hero_link {
     font-size: 30px;
-    color: #000;
+    color: var(--bg-color);
 
     transition: color 0.3s;
 }
 
 .bx {
     font-size: 25px;
-    color: #000;
+    color: var(--text-color);
 
     transition: color 0.3s;
 }
 
-.bxs-file-pdf {
-    color: #fff;
-}
-
 .bx:hover {
-    color: #4facfe;
+    color: var(--second-color);
     }
 
 .hero_box {
@@ -155,10 +165,22 @@ a:active {
     animation: ava-bg 3s infinite alternate;
 }
 
-.sub_container {
+.description_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 15vw;
+    margin-bottom: -4.5vw;
+}
+
+.skill_container {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-evenly;
+width: 100vw;
+height: 33vw;
 }
 
 .skill {
@@ -168,7 +190,7 @@ justify-content: space-evenly;
     height: 129px;
     padding: 50px 40px;
     border-radius: 15px;
-    background-color: #1f1e1b;
+    background-color: var(--bg-color);
     background-position: center;
     gap: 10px;
 }
@@ -176,12 +198,15 @@ justify-content: space-evenly;
 .title {
     display: flex;
     justify-content: center;
+    align-items: center;
+    color: var(--second-color);
 }
 
 .skills_list {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 15px;
 }
 
 #html {
@@ -216,14 +241,28 @@ justify-content: space-evenly;
     background-image:url("./image/icons/icon_git--hover.png");
 }
 
-#scss {
-    background-image:url("./image/icons/icon_scss.png");
+#wp {
+    background-image:url("./image/icons/icon_wp.png");
 }
 
-#scss:hover {
-    background-image:url("./image/icons/icon_scss--hover.png");
+#wp:hover {
+    background-image:url("./image/icons/icon_wp--hover.png");
 }
 
+#projects {
+    margin-top: -4.5vw;
+}
+
+.about_project {
+    background-color: var(--bg-color);
+}
+
+.footer {
+    min-height: 33vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media screen and (max-width: 978px) {
     .hero {
         padding-top: 30px;
